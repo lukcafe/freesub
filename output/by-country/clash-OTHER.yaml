@@ -5,79 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.16.71.213
+  server: 172.67.132.100
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
+  type: vless
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
+  tls: true
+  servername: m16-6.chiAng-MAI2034.kDNS.Fr
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 104.18.9.83
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: 104.16.72.2
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 04 - xiaohe
-  server: 104.16.72.2
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 05 - xiaohe
-  server: 104.16.72.41
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
+    headers:
+      Host: m16-6.chiAng-MAI2034.kDNS.Fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaohe
-  - 🌐 其他地区 (Other) 02 - xiaohe
-  - 🌐 其他地区 (Other) 03 - xiaohe
-  - 🌐 其他地区 (Other) 04 - xiaohe
-  - 🌐 其他地区 (Other) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaohe
-  - 🌐 其他地区 (Other) 02 - xiaohe
-  - 🌐 其他地区 (Other) 03 - xiaohe
-  - 🌐 其他地区 (Other) 04 - xiaohe
-  - 🌐 其他地区 (Other) 05 - xiaohe
 rules:
 - MATCH,PROXIES
