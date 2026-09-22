@@ -4,25 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.67.132.100",
+      "server": "188.114.97.6",
       "server_port": 443,
-      "uuid": "ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "m16-6.chiAng-MAI2034.kDNS.Fr",
+        "server_name": "www.pleadcourt.org",
         "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/JRr6VGcSLFc034DC6sDbwyWJLbB",
+        "path": "/assignment",
         "headers": {
-          "Host": "m16-6.chiAng-MAI2034.kDNS.Fr"
+          "Host": "www.pleadcourt.org"
         }
       }
     },
