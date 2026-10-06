@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  server: brb.nnpy.org
-  port: 11100
+  server: 211.20.156.191
+  port: 28145
   udp: true
-  type: hysteria2
-  password: df8d55f9-fb51-442d-902a-bf8160dc051b
-  sni: brb.nnpy.org
+  type: trojan
+  password: i99Cef
+  sni: ctldl.windowsupdate.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
