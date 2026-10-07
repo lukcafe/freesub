@@ -6,20 +6,36 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "138.124.58.39",
+      "server": "188.114.97.7",
       "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "uuid": "ba49d874-fe02-465d-82d3-ed981dc7694f",
       "tls": {
         "enabled": true,
-        "server_name": "fzo5i.ir46.90k.hh.ov0.kdns.fr",
-        "insecure": false
+        "server_name": "o94Yv7LIF0-aNXISd9eFehvvS7mxn6bH.Z-ULe-iKa-d-e-ne-K-e.wORkeRs.Dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/glasspanel/guest000_0_5de14443985f/",
+        "path": "/7J5lLqtBnJg9WjVT?ed",
         "headers": {
-          "Host": "fzo5i.ir46.90k.hh.ov0.kdns.fr"
+          "Host": "o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
+      "server": "cz.h2.cleanersaz.help",
+      "server_port": 443,
+      "password": "c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl",
+      "tls": {
+        "enabled": true,
+        "server_name": "cz.h2.cleanersaz.help",
+        "insecure": true
       }
     },
     {
@@ -27,14 +43,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
